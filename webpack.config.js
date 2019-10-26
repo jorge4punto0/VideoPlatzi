@@ -60,4 +60,7 @@ module.exports = {
       filename: 'assets/[name].css',
     }),
   ],
+  performance: {
+    hints: false,
+  },
 };
