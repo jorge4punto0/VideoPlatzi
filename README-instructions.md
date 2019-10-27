@@ -70,3 +70,9 @@ Haremos la instalacion con `npm install eslint babel-eslint eslint-config-airbnb
 Vamos a la raiz de nuestro proyecto y creamos el archivo **`.eslintrc`** en el cual añadimos la configuración de este [gist](https://gist.github.com/gndx/60ae8b1807263e3a55f790ed17c4c57a) que contine reglas, plugins, configuraciones (cada una de estas lineas tiene un porqué y pueden encontrarse en el navegador). A esta altura nuestro proyecto está listo para trabajar en eslint.
 
 Pasaremos a agregar el archivo `.gitignore` que lo encontraremos en [gist .gitignore](https://gist.github.com/gndx/747a8913d12e96ff8374e2125efde544) el cual contine la propuesta de platzi de lo que debe contener. Maás tarde se instalará `npm install file-loader --save-dev` el cual permite el manejo de imagenes en webpack.
+
+## 22v. Crando una FAKE API
+
+Usamos un [gist (corregir por initialState)](https://gist.github.com/gndx/d4ca4739450afaa614efe4570ac362ee) el cual ponemos en la raiz en un archivo llamado **`initialState.json`** el cual hará las veces de FACE API.
+Luego de ello con `sudo npm install json-server -g` instalamos  de manera global el paquete de json-server el cual se encarga de simular que el elemento que anteriormente creamos en .json y pase ser una **"API"** que usaremos en el proyecto.
+Para que esto funcione debemos tener 2 instancias de terminal abiertas al mismo tiempo: la primera correrá `json-server initialState.json` comando con el cual corrremos nuestra **`API`**, y en la segunda  nuestro proyecto con `npm start`.
