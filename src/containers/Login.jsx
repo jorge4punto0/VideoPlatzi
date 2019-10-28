@@ -1,6 +1,4 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 import '../assets/styles/App.scss';
 import '../assets/styles/components/Login.scss';
@@ -10,8 +8,6 @@ import twitterIcon from '../assets/static/twitter-icon.png';
 
 const Login = () => (
   <div>
-
-    <Header className='login-header' />
     <section className='login'>
       <section className='login__container'>
         <h2>Inicia sesión</h2>
@@ -46,7 +42,6 @@ const Login = () => (
         </p>
       </section>
     </section>
-    <Footer className='login-footer' />
   </div>
 );
 

@@ -1,6 +1,5 @@
 import React from 'react';
 
-import '../assets/styles/App.scss';
 import '../assets/styles/components/Register.scss';
 
 const Register = () => (
