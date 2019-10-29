@@ -108,3 +108,33 @@ Una de las principales motivaciones para crear Redux nace en resolver un problem
 
 **Lecturas complementarias:**
 [Redux NO está muerto](https://platzi.com/blog/redux-no-esta-muerto/)
+
+
+## 11v. Instalación de Redux
+
+instalacion dependencias para poder trabajar con Redux: `npm install redux react-redux --save` si al terminar instalación se dan vulnerabilidades se puede ejecutar `npm audit fix`.
+El paquete react-redux nos proporciona un Provider para poder encapsular nuestros componentes por medio de un connect para poder transmitir la información que necesitemos del store a cada componente.
+Dentro de nuestro proyecto vamos a crear una carpeta para nuestros actions y otra para los reducers que utilizaremos en Redux.
+
+## 12v. Creando el Store de Redux
+
+Para crear un Store necesitamos llamar a la función createStore del paquete de redux pasándole los parámetros del reducer y initialState.
+
+Para conectar un componente a Redux vamos a necesitar importar connect de react-redux, connect va a aceptar dos parámetros:
+
+mapStateToProps: es una función que le va a indicar al provider qué información necesitamos del store.
+mapDispatchToProps: es un objeto con las distintas funciones para ejecutar una action en Redux.
+
+
+
+
+
+
+
+
+
+
+
+
+
+`````````````````````````````````````
