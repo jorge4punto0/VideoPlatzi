@@ -125,6 +125,15 @@ Para conectar un componente a Redux vamos a necesitar importar connect de react-
 mapStateToProps: es una función que le va a indicar al provider qué información necesitamos del store.
 mapDispatchToProps: es un objeto con las distintas funciones para ejecutar una action en Redux.
 
+## 13v. Creando los reducers
+
+Un action de Redux va a contener dos elementos:
+
+type: para indicar la acción que se va a ejecutar.
+payload: es la información que estamos mandando al reducer.
+Dentro de los reducers usaremos un switch para separar la lógica por cada tipo de acción que tendremos en Redux.
+
+
 
 
 
