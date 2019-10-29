@@ -78,3 +78,33 @@ Instaleremos la libreria de router con `npm install react-router-dom`.
 Dentro de src se crea `routes` que es la carpeta que va manejar las rutas de nuestro proyecto y dentro de ella un archivo llamado `App.js` en el que van a vivir la rutas.
 
 Dentro de `App.js` importaremos **`BrowserRouter`** el cual encapsulara todos los elementos de navegación que se añadiran en nuestro proyecto.
+
+## 9v. Qué es Redux
+
+Redux es una librería creada por Dan Abramov y escrita en JavaScript, basada en la arquitectura Flux (propuesta por facebook) e inspirada en un lenguaje funcional, esta se basa en 3 principios fundamentales:
+
+1. Solamente hay una fuente de la verdad.
+Nuestra aplicación solo debe de tener un único Store y es la única fuente de información.
+
+2. El estado es de solo lectura.
+La única forma de modificar el estado es emitiendo un acción, este objeto describe lo que va a ocurrir.
+
+3. Solamente podemos utilizar funciones puras.
+Para realizar cambios al estado es necesario utilizar Reducers los cuales son funciones puras que toman el estado anterior, una acción y devuelve un nuevo estado con las modificaciones necesarias.
+
+Nuestra UI va a activar una action, esta action va a ejecutar un reducer para modificar la información del store, y al actualizarse el store la UI se va a modificar.
+
+Con Redux podremos manejar el flujo de la información de nuestra aplicación.
+
+## 10t. ¿Qué es Redux? Profundizando en la herramienta
+
+Redux nos permite tener un contenedor predecible del estado en aplicaciones creadas con JavaScript, Nos ayuda a escribir aplicaciones que se comportan de una manera consistente, Esto significa que podemos utilizar esta lógica en aplicaciones del lado del cliente, trabajar del lado del servidor o crear aplicaciones para dispositivos móviles.
+
+Uno de los principales uso que tiene Redux es con React pero puede ser implementado en cualquier librería o proyecto que este construido con JavaScript, lo cual incluye a Angular, Vue o algún otro framework o librería.
+
+Redux nace de la arquitectura Flux, tomando inspiración del lenguaje funcional Elm y es creado por Dan Abramov y Andrew Clark en el 2015, Hoy en día es una de las librerías más utilizadas para el manejo del flujo de la información en aplicaciones.
+
+Una de las principales motivaciones para crear Redux nace en resolver un problema y era el manejo del estado y el flujo de nuestras aplicaciones creadas en JavaScript. Redux propone una forma de manejar el estado donde podamos controlar cómo vamos a interactuar con otros elementos (llamadas a un API) o interacciones dentro de nuestra aplicación, teniendo en cuenta esto, Redux intenta de predecir las mutaciones que pueda sufrir el estado, creando restricciones de cuando y como pueden ser ejecutadas las actualizaciones en nuestras aplicaciones. 
+
+**Lecturas complementarias:**
+[Redux NO está muerto](https://platzi.com/blog/redux-no-esta-muerto/)
