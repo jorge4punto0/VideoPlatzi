@@ -133,6 +133,9 @@ type: para indicar la acción que se va a ejecutar.
 payload: es la información que estamos mandando al reducer.
 Dentro de los reducers usaremos un switch para separar la lógica por cada tipo de acción que tendremos en Redux.
 
+## 14v. Finalizando reducers y eliminar favoritos
+
+
 
 
 
