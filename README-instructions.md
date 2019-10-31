@@ -149,4 +149,4 @@ Dentro de los reducers usaremos un switch para separar la lógica por cada tipo 
 
 
 
-`````````````````````````````````````
+````````````````````````````````````
