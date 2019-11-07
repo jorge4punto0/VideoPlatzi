@@ -135,18 +135,117 @@ Dentro de los reducers usaremos un switch para separar la lógica por cada tipo 
 
 ## 14v. Finalizando reducers y eliminar favoritos
 
+# BACKEND CON NODE JS
+
+## ¿Qué es Node.js?
+Node.js es un entorno de ejecución para JavaScript construido con el motor JavaScript V8 de Chrome. JavaScript es un lenguaje interpretado pero en Node.js tenemos algo llamado el JIT Compiler que es una especie de monitor que optimiza fragmentos de código que son ejecutados frecuentemente.
+
+## Diferencias entre Node.js y JavaScript
+En JavaScript del lado del cliente tenemos el DOM y el CSSDOM así como el objeto window para manipular los elementos de nuestra página además una serie de APIs, aquí unos ejemplos:
+
+fetch.
+SessionStorage y LocalStorage.
+canvas.
+bluetooth.
+audio.
+web authentication.
+Mientras que en Node.js no tenemos un DOM ni un objeto windows, lo que sí tenemos son una serie de módulos que nos permiten interactuar con los recursos de la máquina como el sistema operativo y el sistema de archivos, por ejemplo:
+
+os.
+fs.
+http.
+util.
+debugger.
+stream.
+events.
+
+#Diferencias entre javascript y node.js
+
+En javascript
+
+En javascript tenemos el DOM. La interfaz web.
+En javascript tambien tenemos el CSSOM
+Tambien el fetch API
+Toda la capa del web storage
+Tambien el canvas API
+Las APIs en general del navegador
+En Node.js
+
+Node tiene el modulo de HTTP para crear servidores
+El modulo del sistema operativo para comunicarse con el SO
+El modulo utiliddes
+El modulo debugger
+En común
+
+Librerias comunes streams
+Eventos
+Ecmascript modules
+Consola
+
+## 9v Introducción a streams
+Los Streams son una colección de datos como los arrays o strings sólo que se van procesando pedazo por pedazo, esta capacidad los hace muy poderosos porque podemos manejar una gran cantidad de datos de manera óptima
+
+## 10v. Readable y Writable streams
+Los Readable y Writeable streams tienen los siguientes eventos y funciones respectivamente:
+
+### Readable
+#### Eventos
+data. Se dispara cuando recibe datos. <br>
+end. Se dispara cuando termina de recibir datos. <br>
+error. Se dispara cuando hay un error.<br>
+#### Funciones<br>
+pipe<br>
+unpipe<br>
+read<br>
+push<br>
+#### Writeable<br>
+Eventos<br>
+drain. Se dispara cuando emite datos.<br>
+finish. Se dispara cuando termina de emitir.<br>
+error. Se dispara cuando hay un error.<br>
+Funciones<br>
+write<br>
+end<br>
+Recuerda que tienen estos eventos porque los heredan de la clase **EventEmitter**.
+
+## 11v. Duplex y Transforms streams
+Ambos sirven para simplificar nuestro código:
+
+Duplex: implementa los métodos write y read a la vez.
+Transform: es similar a Duplex pero con una sintaxis más corta.
+
+
+## 12v. Sistema operativo y sistema de archivos
+En esta clase vemos dos módulos básicos:
+
+os. Sirve para consultar y manejar los recursos del sistema operativo.
+fs. Sirve para administrar (copiar, crear, borrar etc.) archivos y directorios.
+Los métodos contenidos en estos módulos (y en todo Node.js) funcionan de forma asíncrona por default, pero también se pueden ejecutar de forma síncrona, por ejemplo el método readFile() tiene su versión síncrona readFileSync().
+
+
+## 13v. Administrar directorios y archivos
+Con fileSystem (fs)
+
+## 14v. Consola, utilidades y debugging
+
+
+## 15t. Clusters y procesos hijos
+Una sola instancia de Node.js corre un solo hilo de ejecución. Para tomar ventaja de los sistemas con multiples core, necesitamos lanzar un cluster de procesos de Node.js para manejar la carga.
+
+El módulo cluster nos permite la creación fácil de procesos hijos que comparten el mismo puerto del servidor. Veamos un ejemplo en código:
+
+## 16v. ¿Qué es Express.js y para qué sirve?
+Express.js es un framework para crear Web Apps, Web APIs o cualquier tipo de Web Services, es libre bajo la licencia MIT.
+
+Express es muy liviano y minimalista además de ser extensible a través de Middlewares.
+
+Los Middlewares interceptan el request y el response para ejecutar una acción en medio.
+
+## Creando tu primer servidor con Express.js
+`npm i express dotenv` donde `dotenv` sirve para cargar las variables de entorno.
+Luego instalamos las dependendencias de desarrollo: `npm i -D nodemon eslint eslint-config-prettier eslint-plugin-prettier prettier`
+Finalmente para que nuestro código haga el formateo automatica despues de un **commit** y se sube a un repositorio instalaremos un hook con `npx mrm lint-staged`
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-````````````````````````````````````
+`````````````````````````````````
