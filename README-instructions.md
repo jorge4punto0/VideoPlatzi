@@ -135,6 +135,7 @@ Dentro de los reducers usaremos un switch para separar la lógica por cada tipo 
 
 ## 14v. Finalizando reducers y eliminar favoritos
 
+
 # BACKEND CON NODE JS
 
 ## ¿Qué es Node.js?
@@ -244,8 +245,47 @@ Los Middlewares interceptan el request y el response para ejecutar una acción e
 ## Creando tu primer servidor con Express.js
 `npm i express dotenv` donde `dotenv` sirve para cargar las variables de entorno.
 Luego instalamos las dependendencias de desarrollo: `npm i -D nodemon eslint eslint-config-prettier eslint-plugin-prettier prettier`
-Finalmente para que nuestro código haga el formateo automatica despues de un **commit** y se sube a un repositorio instalaremos un hook con `npx mrm lint-staged`
+Finalmente para que nuestro código haga el formateo automatica despues de un **commit** y se sube a un repositorio instalaremos un hook con `npx mrm lint-staged`.
+
+Continuará...
 
 
+# SERVER SIDE RENDER CON EXPRESS
 
-`````````````````````````````````
+## 2v. ¿Qué es Server Side Rendering?
+
+Cuando realizamos una petición a una página que hace Client Server Render primero el servidor le contesta al navegador con un documento HTML, después descarga el JS y en el caso de tecnologías como React el navegador ejecuta la lógica para finalmente hacer visible el sitio, ocasionando tiempos de carga más lentos en comparación al Server Side Render donde el navegador recibe un HTML con todo el contenido visible de la página para después descargar y ejecutar el JavaScript.
+
+Renderizar desde el servidor:
+Primera carga más rapida
+Mejor SEO
+Look & Feel
+
+## v3. Babel, Express y React
+
+Para el desarrollo de este curso vamos a utilizar 3 herramientas esenciales:
+
+**Babel**: transforma nuestro código a una versión de JavaScript que cualquier navegador pueda entender.
+**Express**: es un framework de aplicaciones web en Node.js que nos va a ser útil para crear nuestro servidor.
+**React**: librería de JavaScript para crear componentes y nos proporciona un método para renderizar nuestros componentes del lado del servidor.
+Renderizar del lado del servidor nos va a traer beneficios en:
+
+Velocidad de primera carga.
+Mejora el SEO.
+Look & Feel más limpio.
+
+## 4v. Creación del proyecto base
+
+**Hace bind de cualquier módulo de babel que se requiera**
+Instalamos babel register con `--exact` q   ue conserva la version del paquete que se va estar usando.
+`yarn add @babel/register --exact` 
+  
+Express es el framework con el cual vamos a crear nuestro servidor.  
+dotenv nos permite llamar a variables de entorno que almacenemos en el archivo .env  
+`yarn add express dotenv --exact`
+  
+**Herramienta que reinicia automáticamente la aplicación de Node.js cuando se detectan cambios.**
+`yarn add nodemon --exact`
+
+
+`````````````````
